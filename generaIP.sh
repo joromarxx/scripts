@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 #
 # Creates a backup
 sudo cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.bk_`date +%Y%m%d%H%M`
@@ -30,22 +30,3 @@ EOF
 sudo netplan apply
 echo "==========================="
 echo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-^G Get Help      ^O Write Out     ^W Where Is      ^K Cut Text      ^J Justify       ^C Cur Pos       M-U Undo         M-A Mark Text    M-] To Bracket   M-Q Previous     ^B Back
-^X Exit          ^R Read File     ^\ Replace       ^U Paste Text    ^T To Spell      ^_ Go To Line    M-E Redo         M-6 Copy Text    ^Q Where Was     M-W Next         ^F Forward
