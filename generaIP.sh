@@ -1,11 +1,12 @@
 #!/bin/bash
 #
-# Creamos una copia
+# Creates a backup
 sudo cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.bk_`date +%Y%m%d%H%M`
-# Cambia dhcp from 'yes' to 'no'
+# Changes dhcp from 'yes' to 'no'
 sed -i "s/dhcp4: yes/dhcp4: no/g" /etc/netplan/00-installer-config.yaml
+# Retrieves the NIC information
 
-# Nos pregunta por la configuración
+# Ask for input on network configuration
 read -p "Introduce tu direccion ip estatica: " staticip
 read -p "Introduce la IP de tu gateway: " gatewayip
 echo
